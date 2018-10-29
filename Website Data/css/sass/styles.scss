@@ -1,0 +1,7 @@
+@import "./helpers/colors";
+html, body{
+    height: 101%;
+    background:linear-gradient(to bottom right, white 25%, rgb(248, 232, 141) 50%);
+} 
+
+@import "./style/header";

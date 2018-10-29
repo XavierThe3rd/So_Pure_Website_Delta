@@ -1,0 +1,129 @@
+header{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    margin: 0;
+    padding: 0;
+
+    .nav-wrap{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+form, .bottom-nav, .content-wrap, .top-nav, .list-wrap, .wrapit1, .wrapit2, .sidenav a{
+    display: flex;
+}
+.content-wrap, .list-wrap, .wrapit2{
+    flex-direction: row;
+}
+.content-wrap, .top-nav, .wrapit1{
+    justify-content: flex-end;
+}
+ .nav-wrap, .bottom-nav, .search-field, .wrapit2{
+    width: 100%;
+}
+ h1, body{
+    margin:0;
+    padding:0;
+}
+.top-nav{
+    width: 60%;
+    background: $darkPurple;
+    padding: 11px 50px;
+}
+li{
+    list-style: none;
+    margin: auto 0;
+}
+a, h2, .main-link{
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(243, 228, 140);
+    font-family: monotype corsiva;
+    list-style: none;
+    margin: 0 30px;
+}
+h2, .main-link{
+    font-size: 38px;
+}
+.main-link{
+    display: none;
+}
+a:hover, .main-link:hover {
+    color:white;
+}
+.bottom-nav{
+    background: rgb(115, 40, 255);
+    padding: 11px 50px;
+}
+.triangle{
+    height:0px;
+    width:0px;
+    border: 0 solid transparent;
+    border-left-width: 54px;
+    border-right-width: 0px;
+}
+.one{
+    border-bottom: 67px solid rgb(47, 0, 122);
+}
+.two{
+    border-bottom: 67px solid rgb(115, 40, 255);
+}
+.search-field{
+    background-color:rgb(248, 232, 141);
+    color: rgb(28, 28, 28);
+    height: 36px;
+    border:none;
+    outline:none;
+    padding: 0px 16px 0px 40px;
+    border-radius: 0 10px 10px 0;
+}
+form{
+    width: 50%;
+    margin: auto 0;
+}
+.three{
+    border-bottom: 36px solid rgb(248, 232, 141);
+    border-left-width: 24px;
+}
+.mag{
+    fill: rgb(135, 138, 140);
+    width: 18px;
+    position: absolute;
+    margin: 9px;
+}
+.closebtn{
+    font-size: 32px;
+}
+
+.sidenav {
+    background-color: rgb(164, 111, 250);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding:20px 0 50px 0;
+    position: absolute;
+    top:70px;
+    width: 0;
+
+    a {
+        padding: 8px 32px 8px 8px;
+        text-decoration: none;
+        font-size: 32px;
+        color: rgb(248, 232, 141);
+        transition: 0.3s;
+        justify-content: center;
+        &:hover{
+            color: #f1f1f1;
+        }
+    } 
+}
+.wrapit1{
+    flex-direction: row;
+    width:85%;
+    position:relative;
+}
+h1 > span{
+    position: absolute;
+    left: -1000px;
+}
